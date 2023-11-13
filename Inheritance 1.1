@@ -1,0 +1,104 @@
+👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎              Single Inheritance           👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎
+
+
+Syntax :- 👉👉👉👉👉👉👉👉👉👉👉👉
+
+// Parent class
+public class ParentClass
+{
+    // Parent class attributes and methods
+}
+
+// Child class inherits from ParentClass
+public class ChildClass : ParentClass
+{
+    // Additional attributes and methods for the child class
+}
+
+
+Example 1  :- 👉👉👉👉👉👉👉👉👉👉👉👉
+
+
+using System;
+
+public class AccountCreditInfo // Base class
+{
+    public string Credit()
+    {
+        return "Balance is credited";
+    }
+}
+
+public class DebitInfo : AccountCreditInfo // Derived class
+{
+    public string Debit()
+    {
+        Credit(); // Calling the base class method
+        return "Balance is debited";
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        // Creating an instance of the derived class
+        DebitInfo debitAccount = new DebitInfo();
+
+        // Calling the Credit method from the base class
+        string creditMessage = debitAccount.Credit();
+        Console.WriteLine(creditMessage);
+
+        // Calling the Debit method from the derived class
+        string debitMessage = debitAccount.Debit();
+        Console.WriteLine(debitMessage);
+    }
+}
+
+
+
+EXAMPLE 2  :- 👉👉👉👉👉👉👉👉👉👉👉👉
+
+
+using System;
+
+// Base class
+class Vehicle
+{
+    public void StartEngine()
+    {
+        Console.WriteLine("Engine started");
+    }
+}
+
+// Derived class
+class Car : Vehicle
+{
+    public void Drive()
+    {
+        StartEngine(); // Calling the base class method
+        Console.WriteLine("Car is driving");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        // Creating an instance of the derived class
+        Car myCar = new Car();
+
+        // Calling the StartEngine method from the base class
+        Console.WriteLine("Calling StartEngine method from the base class:");
+        myCar.StartEngine();
+        Console.WriteLine();
+
+        // Calling the Drive method from the derived class
+        Console.WriteLine("Calling Drive method from the derived class:");
+        myCar.Drive();
+    }
+}
+
+
+
+🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘
