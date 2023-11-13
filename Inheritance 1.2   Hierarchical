@@ -1,0 +1,74 @@
+👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎          Hierarchical Inheritance           👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎
+
+Example 1 :- 👉👉👉👉👉👉👉👉👉👉👉👉
+
+using System;
+
+// Base class
+class Vehicle
+{
+    public void StartEngine()
+    {
+        Console.WriteLine("Engine started");
+    }
+}
+
+// Derived class 1
+class Car : Vehicle
+{
+    public void Drive()
+    {
+        StartEngine(); // Calling the base class method
+        Console.WriteLine("Car is driving");
+    }
+}
+
+// Derived class 2
+class Motorcycle : Vehicle
+{
+    public void Ride()
+    {
+        StartEngine(); // Calling the base class method
+        Console.WriteLine("Motorcycle is riding");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        // Creating an instance of the first derived class
+        Car myCar = new Car();
+
+        // Calling methods from the first derived class
+        Console.WriteLine("Calling methods from the Car class:");
+        myCar.StartEngine();
+        myCar.Drive();
+        Console.WriteLine();
+
+        // Creating an instance of the second derived class
+        Motorcycle myMotorcycle = new Motorcycle();
+
+        // Calling methods from the second derived class
+        Console.WriteLine("Calling methods from the Motorcycle class:");
+        myMotorcycle.StartEngine();
+        myMotorcycle.Ride();
+    }
+}
+
+
+Output :--- 👦👦👦👦👦
+
+Calling methods from the Car class:
+Engine started
+Car is driving
+
+Calling methods from the Motorcycle class:
+Engine started
+Motorcycle is riding
+
+
+
+
+
+🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘
