@@ -1,0 +1,53 @@
+👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎              Multilevel Inheritance           👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎
+
+Example 1: ----- 👉👉👉👉👉👉👉👉👉👉👉👉
+
+using System;
+
+// Base class
+class Vehicle
+{
+    public void StartEngine()
+    {
+        Console.WriteLine("Engine started");
+    }
+}
+
+// Derived class 1
+class Car : Vehicle
+{
+    public void Drive()
+    {
+        StartEngine(); // Calling the base class method
+        Console.WriteLine("Car is driving");
+    }
+}
+
+// Derived class 2 (inherits from Car)
+class SportsCar : Car
+{
+    public void Race()
+    {
+        Drive(); // Calling the method from the immediate base class (Car)
+        Console.WriteLine("Sports car is racing");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        // Creating an instance of the second derived class (SportsCar)
+        SportsCar mySportsCar = new SportsCar();
+
+        // Calling methods from the second derived class
+        Console.WriteLine("Calling methods from the SportsCar class:");
+        mySportsCar.StartEngine(); // Calling method from the base class (Vehicle)
+        mySportsCar.Race();        // Calling method from the immediate base class (Car)
+    }
+}
+
+
+
+
+🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘
