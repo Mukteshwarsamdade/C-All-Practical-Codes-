@@ -1,0 +1,65 @@
+👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎              Constructor calls in Inherit           👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎
+
+Example 1:- 👉👉👉👉👉👉👉👉
+
+using System;
+
+// Base class
+class Vehicle
+{
+    // Constructor
+    public Vehicle()
+    {
+        Console.WriteLine("Vehicle constructor called");
+    }
+
+    public void StartEngine()
+    {
+        Console.WriteLine("Engine started");
+    }
+}
+
+// Derived class
+class Car : Vehicle
+{
+    // Constructor
+    public Car() : base()
+    {
+        Console.WriteLine("Car constructor called");
+    }
+
+    public void Drive()
+    {
+        StartEngine();
+        Console.WriteLine("Car is driving");
+    }
+}
+
+// Main program
+class Program
+{
+    static void Main()
+    {
+        // Creating an instance of the derived class (Car)
+        Car myCar = new Car();
+        
+        // Calling methods from the derived class
+        myCar.Drive();
+    }
+}
+
+
+Output :--- 👎👎👎👎👎
+
+
+Vehicle constructor called
+Car constructor called
+Engine started
+Car is driving
+
+
+
+
+
+
+🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘
